@@ -1,0 +1,38 @@
+/* CSS styles for the dashboard */
+
+body {
+    font-family: 'Arial', sans-serif; /* Setting the font family for the body */
+    margin: 0;
+    padding: 0;
+    background-color: #539ee8; /* Setting the background color for the body */
+}
+
+header {
+    background-color: #343a40; /* Setting the background color for the header */
+    color: #ffffff; /* Setting the text color for the header */
+    padding: 20px; /* Adding padding to the header */
+    text-align: center; /* Aligning the text in the center of the header */
+}
+
+.container {
+    display: flex; /* Setting display property to flex for the container */
+    justify-content: center; /* Aligning items horizontally in the center */
+    align-items: flex-start; /* Aligning items vertically at the start */
+    flex-wrap: wrap; /* Allowing items to wrap when necessary */
+    margin-top: 20px; /* Adding top margin to the container */
+}
+
+.chart-container {
+    width: 400px; /* Setting width for the chart container */
+    margin: 20px; /* Adding margin around the chart container */
+    padding: 20px; /* Adding padding inside the chart container */
+    border-radius: 10px; /* Adding border radius to create rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow for a subtle effect */
+    background-color: #ffffff; /* Setting background color for the chart container */
+    text-align: center; /* Aligning text in the center of the chart container */
+}
+
+canvas {
+    width: 100%; /* Setting canvas width to 100% of its container */
+    height: 100%; /* Setting canvas height to 100% of its container */
+}
