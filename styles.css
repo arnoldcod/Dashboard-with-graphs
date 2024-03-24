@@ -26,25 +26,29 @@ header {
 
 .chart-container {
     width: 400px; /* Setting width for the chart container */
-    margin: 20px; /* Adding margin around the chart container */
+    height: 500px;/* Setting height for the chart container */
+    display: flexbox;
+    justify-content: space-between;
+    margin-left: 500px; /* Adding margin around the chart container */
     padding: 20px; /* Adding padding inside the chart container */
     border-radius: 10px; /* Adding border radius to create rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow for a subtle effect */
     background-color: #ffffff; /* Setting background color for the chart container */
     text-align: center; /* Aligning text in the center of the chart container */
-    align-items: center;
 }
 
 .carousel-item {
-   
     justify-content: center;
     align-items: center;
   }
 
-
-
 canvas {
-    width: 100%; /* Setting canvas width to 100% of its container */
-    height: 100%; /* Setting canvas height to 100% of its container */
+    width: auto; /* Setting canvas width to 100% of its container */
+    height: auto; /* Setting canvas height to 100% of its container */
+    display: flexbox;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    grid-template-columns: 2fr 2fr;
+
 }

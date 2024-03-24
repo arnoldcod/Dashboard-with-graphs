@@ -22,20 +22,31 @@ const trafficData = {
     }]
 };
 
+const expenseData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [{
+        label: 'Expenses',
+        data: [100, 200, 300, 400, 500, 600], 
+       backgroundColor: ['rgba(255, 99, 132, 0.5)',
+       'blue', 'green', 'red', 'black', 'orange', 'indigo'],
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1
+    }]
+};
+
+
 const engagementData = {
     labels: ['Likes', 'Comments', 'Shares'],
     datasets: [{
         label: 'User Engagement',
         data: [300, 200, 150],
         backgroundColor: [
-            'rgba(255, 206, 86, 0.5)',
-            'rgba(75, 192, 192, 0.5)',
-            'rgba(153, 102, 255, 0.5)'
+            'purple',
+            'yellow',
+            'lightblue'
         ],
         borderColor: [
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)'
+           'black'
         ],
         borderWidth: 1,
     }   
@@ -44,4 +55,5 @@ const engagementData = {
 
 export{salesData};
 export{trafficData};
+export{expenseData};
 export{engagementData};
