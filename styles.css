@@ -27,9 +27,8 @@ header {
 .chart-container {
     width: 400px; /* Setting width for the chart container */
     height: 500px;/* Setting height for the chart container */
-    display: flexbox;
     justify-content: space-between;
-    margin-left: 500px; /* Adding margin around the chart container */
+    margin: 10px; /* Adding margin around the chart container */
     padding: 20px; /* Adding padding inside the chart container */
     border-radius: 10px; /* Adding border radius to create rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding box shadow for a subtle effect */
@@ -37,14 +36,16 @@ header {
     text-align: center; /* Aligning text in the center of the chart container */
 }
 
-.carousel-item {
+.carousel-inner {
     justify-content: center;
     align-items: center;
+    display: flex;
   }
 
 canvas {
     width: auto; /* Setting canvas width to 100% of its container */
-    height: auto; /* Setting canvas height to 100% of its container */
+    height: 100px; /* Setting canvas height to 100% of its container */
+    margin-top: 50px;
     display: flexbox;
     justify-content: space-between;
     align-items: center;
