@@ -43,13 +43,12 @@ header {
   }
 
 canvas {
-    width: auto; /* Setting canvas width to 100% of its container */
-    height: 100px; /* Setting canvas height to 100% of its container */
+    width: 100%; /* Setting canvas width to 100% of its container */
+    height: 100%; /* Setting canvas height to 100% of its container */
     margin-top: 50px;
     display: flexbox;
     justify-content: space-between;
     align-items: center;
     position: relative;
     grid-template-columns: 2fr 2fr;
-
 }
