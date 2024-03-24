@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/boostrap/css/bootstrap.css"> <!--linking with boostrap css-->
+
     <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
 </head>
 <body>
@@ -11,25 +14,42 @@
         <h1>Dashboard</h1> <!-- Main title of the dashboard -->
         <p>Visual representation of sales, website traffic, and user engagement</p> <!-- Description of the dashboard -->
     </header>
-    <div class="container">
-        <div class="chart-container">
-            <h2>Sales</h2> <!-- Title for the sales chart -->
-            <p>Monthly sales performance</p> <!-- Description of the sales chart -->
-            <canvas id="salesChart"></canvas> <!-- Canvas element for rendering the sales chart -->
-        </div>
-        <div class="chart-container">
-            <h2>Website Traffic</h2> <!-- Title for the website traffic chart -->
-            <p>Weekly website traffic</p> <!-- Description of the website traffic chart -->
-            <canvas id="trafficChart"></canvas> <!-- Canvas element for rendering the website traffic chart -->
-        </div>
-        <div class="chart-container">
-            <h2>User Engagement</h2> <!-- Title for the user engagement chart -->
-            <p>Percentage breakdown of user engagement</p> <!-- Description of the user engagement chart -->
-            <canvas id="engagementChart"></canvas> <!-- Canvas element for rendering the user engagement chart -->
-        </div>
+
+
+    <div class="container carousel slide" id="carouselExample">
+     <div class="carousel-inner">
+            <div class="chart-container carousel-item active">
+                <h2>Sales</h2> <!-- Title for the sales chart -->
+                <p>Monthly sales performance</p> <!-- Description of the sales chart -->
+                <canvas id="salesChart"></canvas> <!-- Canvas element for rendering the sales chart -->
+            </div>
+
+            <div class="chart-container  carousel-item">
+                <h2>Website Traffic</h2> <!-- Title for the website traffic chart -->
+                <p>Weekly website traffic</p> <!-- Description of the website traffic chart -->
+                <canvas id="trafficChart"></canvas> <!-- Canvas element for rendering the website traffic chart -->
+            </div>
+
+            <div class="chart-container carousel-item">
+                <h2>User Engagement</h2> <!-- Title for the user engagement chart -->
+                <p>Percentage breakdown of user engagement</p> <!-- Description of the user engagement chart -->
+                <canvas id="engagementChart"></canvas> <!-- Canvas element for rendering the user engagement chart -->
+            </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
     </div>
 
+    <script src="css/boostrap/js/bootstrap.js"></script> <!--linking with bootstrap js-->
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Linking the Chart.js library -->
-    <script src="script.js"></script> <!-- Linking the JavaScript file -->
+    <script src="scripts/script.js" type="module"></script> <!-- Linking the JavaScript file -->
 </body>
 </html>
